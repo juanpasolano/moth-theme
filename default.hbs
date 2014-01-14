@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    {{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="description" content="{{meta_description}}" />
+    {{! Responsive Meta Tags }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{! Styles }}
+
+		<link rel="stylesheet" type="text/css" href="{{asset "css/vendor/foundation.min.css"}}" />
+		<link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+
+		{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+	<div class="wrapper_themename">
+
+	{{> header}}
+	{{{body}}}
+	{{> footer}}
+	</div>
+	{{ghost_foot}}
+	<script src="{{asset "js/scripts.js"}}"></script>
+</body>
+</html>
